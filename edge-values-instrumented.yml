@@ -52,6 +52,9 @@ extraVolumeMounts:
   - name: hostroot
     mountPath: /hostfs
     hostPath: /
+  - name: docker
+    mountPath: /var/run/docker.sock
+    hostPath: /var/run/docker.sock
 env:
   CRIBL_DIST_MODE: managed-edge
 
